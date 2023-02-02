@@ -1,11 +1,11 @@
-//this is the controller file
+// this is the controller file
 const models = require("../models");
 
 const browse = (req, res) => {
   models.item
     .findAll()
     .then(([rows]) => {
-      //with this line , i throw a response to the client
+      // with this line , i throw a response to the client
       res.send(rows);
     })
     .catch((err) => {

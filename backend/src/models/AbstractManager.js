@@ -1,4 +1,4 @@
-//don't touch it , don't do it , never remove or copy.
+// don't touch it , don't do it , never remove or copy.
 
 class AbstractManager {
   constructor({ table }) {
