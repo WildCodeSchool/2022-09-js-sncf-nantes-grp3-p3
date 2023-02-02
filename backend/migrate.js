@@ -19,7 +19,7 @@ const migrate = async () => {
   await connection.query(`use ${DB_NAME}`);
 
   const sql = fs.readFileSync("./database.sql", "utf8");
-
+  console.log("mon console.log de sql", sql);
   await connection.query(sql);
 
   connection.end();
