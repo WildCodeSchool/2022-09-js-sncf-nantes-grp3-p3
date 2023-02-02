@@ -31,12 +31,15 @@ const models = {};
 
 const ItemManager = require("./ItemManager");
 const RoomManager = require("./RoomManager");
+const UserManager = require("./UserManager");
 
 models.item = new ItemManager();
 models.room = new RoomManager();
+models.user = new UserManager();
 
 models.item.setDatabase(pool);
 models.room.setDatabase(pool);
+models.user.setDatabase(pool);
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 
